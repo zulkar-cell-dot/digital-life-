@@ -1,0 +1,37 @@
+/* =========================
+   NAVIGATION
+========================= */
+
+nav {
+    background: #17152e;
+    color: white;
+
+    padding: 18px 8%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 1000;
+}
+
+nav h2 {
+    color: #00e5ff;
+}
+
+.nav-links a {
+    color: white;
+
+    text-decoration: none;
+
+    margin-left: 20px;
+
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #00e5ff;
+}

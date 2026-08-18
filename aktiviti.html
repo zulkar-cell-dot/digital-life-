@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="ms">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Aktiviti Pelajar | DigitalLife Studio</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+
+
+    <div class="controls">
+
+        <button onclick="toggleTheme()">
+            🌙 Tema
+        </button>
+
+        <button onclick="changeFont(1)">
+            A+
+        </button>
+
+        <button onclick="changeFont(-1)">
+            A−
+        </button>
+
+    </div>
+
+</header>
+
+
+<!-- =====================================================
+     TAJUK
+     ===================================================== -->
+
+<main>
+
+<section class="page-hero">
+
+    <span class="badge">
+        MODUL INTERAKTIF PELAJAR
+    </span>
+
+    <h1>
+        🧠 Aktiviti Pelajar
+    </h1>
+
+    <p>
+        Uji pengetahuan anda tentang gaya hidup digital
+        melalui kuiz, nota interaktif dan aktiviti refleksi.
+    </p>
+
+</section>
+
+
+<!-- =====================================================
+     AKTIVITI 1
+     ===================================================== -->
+
+<section class="activity-section">
+
+    <div class="card quiz">
+
+        <div class="activity-number">
+            AKTIVITI 1
+        </div>
+
+        <h2>
+            🧠 Soal Jawab
+        </h2>
+
+        <p class="question">
+
+            Apakah tindakan paling sesuai apabila menerima
+            berita yang meragukan di media sosial?
+
+        </p>
+
+
+        <div class="options">
+
+            <button class="option"
+                    onclick="semakJawapan(1, false, this)">
+
+                <span class="option-letter">A</span>
+
+                <span>
+                    Terus kongsi kepada semua rakan
+                </span>
+
+            </button>
+
+
+            <button class="option"
+                    onclick="semakJawapan(1, true, this)">
+
+                <span class="option-letter">B</span>
+
+                <span>
+                    Semak sumber dan kesahihannya dahulu
+                </span>
+
+            </button>
+
+
+            <button class="option"
+                    onclick="semakJawapan(1, false, this)">
+
+                <span class="option-letter">C</span>
+
+                <span>
+                    Percaya kerana ramai orang berkongsi
+                </span>
+
+            </button>
+
+        </div>
+
+
+        <div id="feedback1"
+             class="feedback">
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     AKTIVITI 2
+     ===================================================== -->
+
+<section class="activity-section">
+
+    <div class="card quiz">
+
+        <div class="activity-number">
+            AKTIVITI 2
+        </div>
+
+        <h2>
+            📱 Soal Jawab
+        </h2>
+
+        <p class="question">
+
+            Apakah amalan yang baik ketika menggunakan
+            telefon pintar?
+
+        </p>
+
+
+        <div class="options">
+
+            <button class="option"
+                    onclick="semakJawapan(2, false, this)">
+
+                <span class="option-letter">A</span>
+
+                <span>
+                    Menggunakannya sepanjang hari
+                </span>
+
+            </button>
+
+
+            <button class="option"
+                    onclick="semakJawapan(2, true, this)">
+
+                <span class="option-letter">B</span>
+
+                <span>
+                    Mengambil rehat secara berkala
+                </span>
+
+            </button>
+
+
+            <button class="option"
+                    onclick="semakJawapan(2, false, this)">
+
+                <span class="option-letter">C</span>
+
+                <span>
+                    Mengabaikan aktiviti fizikal
+                </span>
+
+            </button>
+
+        </div>
+
+
+        <div id="feedback2"
+             class="feedback">
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     AKTIVITI 3
+     ===================================================== -->
+
+<section class="activity-section">
+
+    <div class="card quiz">
+
+        <div class="activity-number">
+            AKTIVITI 3
+        </div>
+
+        <h2>
+            🛡️ Soal Jawab
+        </h2>
+
+        <p class="question">
+
+            Yang manakah merupakan amalan
+            keselamatan digital?
+
+        </p>
+
+
+        <div class="options">
+
+            <button class="option"
+                    onclick="semakJawapan(3, true, this)">
+
+                <span class="option-letter">A</span>
+
+                <span>
+                    Menggunakan kata laluan yang kuat
+                </span>
+
+            </button>
+
+
+            <button class="option"
+                    onclick="semakJawapan(3, false, this)">
+
+                <span class="option-letter">B</span>
+
+                <span>
+                    Berkongsi kata laluan dengan rakan
+                </span>
+
+            </button>
+
+
+            <button class="option"
+                    onclick="semakJawapan(3, false, this)">
+
+                <span class="option-letter">C</span>
+
+                <span>
+                    Berkongsi maklumat peribadi kepada
+                    orang yang tidak dikenali
+                </span>
+
+            </button>
+
+        </div>
+
+
+        <div id="feedback3"
+             class="feedback">
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     NOTA INTERAKTIF
+     ===================================================== -->
+
+<section class="activity-section">
+
+    <div class="card">
+
+        <div class="activity-number">
+            AKTIVITI 4
+        </div>
+
+        <h2>
+            📖 Nota Interaktif
+        </h2>
+
+        <p>
+            Klik butang di bawah untuk melihat
+            nota penting tentang gaya hidup digital.
+        </p>
+
+
+        <button class="btn"
+                onclick="toggleNote()">
+
+            📖 Papar / Sembunyi Nota
+
+        </button>
+
+
+        <div id="secretNote"
+             class="interactive-note">
+
+            <h3>
+                💡 Nota Penting
+            </h3>
+
+            <p>
+                Gaya hidup digital yang sihat memerlukan
+                keseimbangan antara penggunaan teknologi,
+                pembelajaran, aktiviti fizikal, rehat dan
+                hubungan sosial.
+            </p>
+
+
+            <ul>
+
+                <li>
+                    Gunakan teknologi secara sederhana.
+                </li>
+
+                <li>
+                    Lindungi maklumat peribadi.
+                </li>
+
+                <li>
+                    Semak kesahihan maklumat.
+                </li>
+
+                <li>
+                    Ambil masa untuk berehat daripada skrin.
+                </li>
+
+                <li>
+                    Gunakan teknologi untuk tujuan yang
+                    bermanfaat.
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     REFLEKSI
+     ===================================================== -->
+
+<section class="activity-section">
+
+    <div class="card">
+
+        <div class="activity-number">
+            AKTIVITI 5
+        </div>
+
+        <h2>
+            ✍️ Refleksi Pelajar
+        </h2>
+
+        <p>
+
+            Apakah satu perubahan yang boleh anda lakukan
+            untuk menjadi pengguna teknologi yang lebih bijak?
+
+        </p>
+
+
+        <textarea
+            id="reflection"
+            placeholder="Tulis refleksi anda di sini...">
+        </textarea>
+
+
+        <div class="button-group">
+
+            <button class="btn"
+                    onclick="saveReflection()">
+
+                💾 Simpan Refleksi
+
+            </button>
+
+
+            <button class="btn alt"
+                    onclick="clearReflection()">
+
+                🗑 Padam
+
+            </button>
+
+        </div>
+
+
+        <p id="saveMsg"
+           class="feedback">
+        </p>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- =====================================================
+     FOOTER
+     ===================================================== -->
+
+<footer>
+
+    <strong>
+        🌐 DigitalLife Studio
+    </strong>
+
+    <p>
+        Modul Multimedia Interaktif
+        • Gaya Hidup Digital
+    </p>
+
+</footer>
+
+
+<!-- =====================================================
+     JAVASCRIPT
+     ===================================================== -->
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
